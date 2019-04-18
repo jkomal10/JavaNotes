@@ -1,0 +1,71 @@
+to fins all user in database-
+SELECT * FROM ALL_USERS;.....find user that are visible to current user
+SELECT * FROM DBA_USERS;......find all user in oracle
+SELECT USERNAME FROM V$SESSION;.......find logged in users
+<select sid, serial#, username, last_call_et from v$session where username is not null;>.............last login time
+select * from ALL_CONSTRAINTS WHERE table_name = 'DEPARTMENTS' and owner='C##SAMPLE1';....to find contraints of specified table and specifies owner.
+
+select * from role_tab_privs where role='DBA' and privilege = 'SELECT';.....List which tables a certain role gives SELECT access to
+
+SELECT * FROM USER_SYS_PRIVS; SELECT * FROM USER_TAB_PRIVS; SELECT * FROM USER_ROLE_PRIVS;......How to find the privileges and roles granted to a user in Oracle?
+SELECT * FROM role_sys_privs;.......You can check which system privileges have been granted to a role by querying role_sys_privs
+SELECT * FROM user_role_privs;....... check which roles have been granted to a user by querying user_role_privs.
+SELECT * FROM role_tab_privs;.........check which object privileges have been granted to a role by querying role_tab_privs.
+SELECT * FROM user_cons_columns WHERE table_name = '<your table name>';......find out contraints on table'
+SELECT * FROM user_constraints WHERE table_name = '<your table name>' AND constraint_name = '<your constraint name>';......find info about specified contraint
+(All_cons,all_contraints)
+
+
+all_contraints
+dbs_constraints
+user_constraints
+
+
+all_view
+dbs_view
+user-view
+
+
+all_triggers
+dba_triggers
+user_triggers
+
+SELECT * FROM ALL_OBJECTS WHERE OBJECT_TYPE IN ('FUNCTION','PROCEDURE','PACKAGE')......to list all functions ,procedures and packges
+we can apply conditions using where to list function and procedures only for specific schema
+SELECT * FROM USER_OBJECTS WHERE OBJECT_TYPE IN ('FUNCTION','PROCEDURE','PACKAGE').......tolist all function procedures and packages for current user
+
+
+
+SELECT OWNER, OBJECT_NAME, OBJECT_TYPE
+FROM   DBA_OBJECTS
+ORDER BY OWNER, OBJECT_NAME;..........query shows information about all objects in the database:
+
+select owner_name, table_name, head_rowid, analyze_timestamp 
+    FROM chained_rows
+    ORDER BY owner_name, table_name, head_rowid, analyze_timestamp;..........to list all tables and views
+
+	select * from dba_tables;.......list all tables with owner/user
+	select * from dba_indexes;..........list all indexes(contraints)
+	
+	ANALYZE TABLE emp VALIDATE STRUCTURE cascade;........analyze table and check all indexes ,validate an object and all dependent objects (for example, indexes) by including the CASCADE
+	
+	
+	EXECUTE DBMS_STATS.GATHER_SCHEMA_STATS('OE',DBMS_STATS.AUTO_SAMPLE_SIZE);
+	SELECT * FROM DBA_SCHEDULER_JOBS WHERE JOB_NAME = 'GATHER_STATS_JOB';......
+	
+	SELECT * FROM DBA_SCHEDULER_JOBS WHERE JOB_NAME = 'GATHER_STATS_JOB';......Automatic statistics gathering is enabled by default when a database is created, or when a database is upgraded from an earlier database release. You can verify that the job exists by viewing the DBA_SCHEDULER_JOBS view:
+	EXECUTE DBMS_STATS.GATHER_SCHEMA_STATS('OE',DBMS_STATS.AUTO_SAMPLE_SIZE);......to collect table and column statistics for all tables in the OE schema with auto-sampling,
+	
+	
+	
+	
+	EXEC DBMS_STATS.GATHER_TABLE_STATS (ownname =>'C##dk',tabname =>'DEPARTMENTS',ESTIMATE_PERCENT=>NULL);.....table statistics
+	select * from ALL_TAB_STATISTICS where table_name='DEPARTMENTS';.......show stat table with detail information.
+	
+	
+EXEC DBMS_STATS.GATHER_INDEX_STATS (NULL,'PK_DEPARTMENTS',NULL);........................................GATHER_INDEX_STAT
+
+SELECT * FROM ALL_IND_STATISTICS WHERE INDEX_NAME='PK_DEPARTMENTS';
+
+	
+	

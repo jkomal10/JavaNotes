@@ -1,0 +1,79 @@
+Find Stored Procedure Related to Table in Database – Search in All Stored Procedure
+
+SELECT DISTINCT so.name
+FROM syscomments sc
+INNER JOIN sysobjects so ON sc.id=so.id
+WHERE sc.TEXT LIKE '%tablename%'
+----Option 2
+SELECT DISTINCT o.name, o.xtype
+FROM syscomments c
+INNER JOIN sysobjects o ON c.id=o.id
+WHERE c.TEXT LIKE '%tablename%'
+
+All User Defined Objects
+This will give you all the objects listed here.
+
+-- all user defined objects 
+SELECT  sys.schemas.name + '.' + sys.objects.name, type, type_desc 
+FROM    sys.objects 
+INNER JOIN sys.schemas ON sys.objects.schema_id = sys.schemas.schema_id 
+order by 3,1
+
+Common User Defined Objects
+This will give you a list of the following user defined objects: stored procedures, views, table-values functions, scalar-valued functions, aggregate functions.
+
+-- common user defined objects 
+SELECT  sys.schemas.name + '.' + sys.objects.name, type, type_desc 
+FROM    sys.objects 
+INNER JOIN sys.schemas ON sys.objects.schema_id = sys.schemas.schema_id 
+where type in 
+( 
+'p', 'pc', -- stored procs 
+'v', -- views 
+'tf', 'if', 'ft', -- table-valued functions 
+'fn', 'fs', -- scalar-valued functions 
+'af' -- aggregate functions 
+) 
+order by 3,1 
+
+User Defined Stored Procedures
+-- user defined stored procs 
+SELECT  sys.schemas.name + '.' + sys.objects.name 
+FROM    sys.objects 
+INNER JOIN sys.schemas ON sys.objects.schema_id = sys.schemas.schema_id 
+where type in ('p', 'pc') 
+order by 1
+
+User Defined Views
+-- user defined views 
+SELECT  sys.schemas.name + '.' + sys.objects.name 
+FROM    sys.objects 
+INNER JOIN sys.schemas ON sys.objects.schema_id = sys.schemas.schema_id 
+where type='v' 
+order by 1
+
+User Defined Table-Valued Functions
+-- user defined table-valued functions 
+SELECT  sys.schemas.name + '.' + sys.objects.name 
+FROM    sys.objects 
+INNER JOIN sys.schemas ON sys.objects.schema_id = sys.schemas.schema_id 
+where type in ('tf', 'if', 'ft') 
+order by 1
+
+User Defined Scalar-Valued Functions
+-- user defined scalar-valued functions 
+SELECT  sys.schemas.name + '.' + sys.objects.name 
+FROM    sys.objects 
+INNER JOIN sys.schemas ON sys.objects.schema_id = sys.schemas.schema_id 
+where type in ('fn', 'fs') 
+order by 1
+
+User Defined Aggregate-Valued Functions
+-- user defined aggregate-valued functions 
+SELECT  sys.schemas.name + '.' + sys.objects.name 
+FROM    sys.objects 
+INNER JOIN sys.schemas ON sys.objects.schema_id = sys.schemas.schema_id 
+where type = 'af' 
+order by 1
+
+Posted by Br

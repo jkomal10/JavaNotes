@@ -1,0 +1,23 @@
+
+sysdba
+select * from C##sample1.employees;
+grant UPDATE on C##sample1.employees to C##TEST;
+
+select * from ALL_COL_PRIVS;
+
+select * from dba_role_privs;
+
+select * from dba_role_privs where grantee = 'C##TEST';
+select * from DBA_SYS_PRIVS; 
+select * from all_users;
+select * from DBA_SYS_PRIVS where grantee='C##DEMO';
+select * from dba_COL_PRIVS;
+select * from dba_users;
+select * from role_tab_privs;
+SELECT * FROM DBA_TAB_PRIVS;
+select * from user_tab_privs; where table_name='employees';
+select * from role_tab_privs where table_name='';
+
+select Grantee,'Granted Through Role' as Grant_Type, role, table_name from role_tab_privs rtp, dba_role_privs drp,user_tab_privs utp where utp.table_name = 'C##SAMPLE1.EMPLOYEES';
+
+select * from role_tab_privs rtp, dba_role_privs drp,user_tab_privs utp; where utp.table_name = 'C##SAMPLE1.EMPLOYEES';

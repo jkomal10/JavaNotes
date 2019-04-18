@@ -1,0 +1,19 @@
+versioning:-
+As we insert sem data into bucket and if versioning is enamble then it maintain versions of object and it will assign different version id to it.
+-if versioning is suspended still it maintain versions od object but it wont assign any version id.version id becomes null.
+-When we delete an object it will not delete object actually,it just behave like bucket is empty but object is still there and it insert delete marked on current version. it will delete null version of an object.
+-if you want to delete object permanently then use delete api with version id.
+
+
+There is prefix and suffix option for filteration purpose 
+-we can filter notifaction....ex-object like log/ prefix insert or delete from bucket then only notify subscriber and suffix like  .jpg 
+
+
+AWS lambda-
+
+-serverless
+-use to run background task
+-we can't deploy code,just run the code
+-aws lambda support java,node.js,python,Go,C#
+we can run code in response to an event like insert object into bucket
+

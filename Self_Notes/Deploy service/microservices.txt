@@ -1,0 +1,14 @@
+Microservices-
+why?
+Ans- in monolithic architecute components are tightly coupled. 
+-is like a big container where in all the s/w components of an application are assembled together and tightly packaged.
+-disadviantage of monolithic-large and complex
+-slow development
+-blocks continuous development
+-unscalable
+-unreliable
+-inflexible-expensive
+
+What is microservices?
+is an architectural style that structures an application as a collection of small autonomous services,modelled around a business domain
+-each service is self contained and implemnts a single business capability.

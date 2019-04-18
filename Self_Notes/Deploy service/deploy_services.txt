@@ -1,0 +1,26 @@
+redeploy services on Azure VM
+
+prerequisites:- maven install
+-open remote machine
+paste ip address followed by :22 example-137.117.64.137:22
+chose another user 
+username-azureuser
+passwrd-AzureUser@2019
+-get latest code from bit bucket
+-import project
+-update maven
+-in every  pom file replace jar with war because we need war file
+-right click on mass engine select show in terminal
+to build project run follwing command
+-mvn clean install 
+if maven not install download maven zip
+to check maven version in cmd run command mvn --version
+-unzip maven and add bin path to path environment variable
+-in case of m2 error go to user/komjagta/.m2 nad clear whole repository
+-get your war file from target folder
+-go to tomcat /webapp
+-paste your web file
+-then in cmd run statup.bat
+to change port go to server.xml change connector http 
+to chANGE USER tomcat-user.xml 
+go to manage app

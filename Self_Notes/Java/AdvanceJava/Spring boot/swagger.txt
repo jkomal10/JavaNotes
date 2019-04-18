@@ -1,0 +1,4 @@
+localhost:8090/swagger-ui.html#/
+
+
+need to add swagger dependency in pom and create java class for that

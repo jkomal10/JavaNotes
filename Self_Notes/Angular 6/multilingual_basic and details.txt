@@ -1,0 +1,42 @@
+https://www.youtube.com/watch?v=Ps-7ZV8YpI0-------------------integrate angular and spring boot
+https://www.youtube.com/watch?v=NSt9CI3BXv4------------------material data table
+https://www.youtube.com/watch?v=vBugfzKjKBg----------------reactive form
+https://www.youtube.com/watch?v=TTZ7IWJO6pk&index=1&list=RDTTZ7IWJO6pk---------multilingual
+https://www.codeandweb.com/babeledit/tutorials/how-to-translate-your-angular-app-with-ngx-translate---------------------ngx-translate for angular 6 (multilingual)
+https://github.com/ngx-translate/core
+Angular Project
+npm --version
+5.6.0
+
+node --version
+v8.11.1
+npm install -g @angular/cli@latest--------------to install angluar cli
+for latest bootstrap we need jquery we can install it by using command--------npm install jquery
+also need popper.js , we can install it using--------------npm install --save popper.js angular-popper
+steps to create angular project in node cmd
+ng new application_name--to create application
+cd application_name
+npm install --save-dev @angular-devkit/build-angular------------------------------could not found module @angulat/devkit error
+ng serve------to compile/run
+
+ng g c componenet_name------to create component
+ng install bootstrap@3.3.7 --save----------make sure using  same version
+and make changes in style of angula/cli.json file
+
+
+npm install --save @angular/material @angular/cdk @angular/animations----------------to install angular material , cdk and  animation
+
+-to install i18n ----------./node_modules/.bin/ng-xi18n
+
+npm install npm update npm link ng serve -----------You seem to not be depending on "@angular/core" and/or "rxjs". This is an error.
+
+Create a translation source file with ------------ng xi18n --output-path locale  or (ng xi18n)
+ng build --prod --i18n-file src/locale/messages.fr.xlf --i18n-format xlf --i18n-locale fr-------------to crete configuration for different language
+
+ng xi18n --output-path locale--------------to generate messages.xlf file
+
+npm run extract---------to generate .xlf file
+
+
+
+npm install --save-dev i18n-extract-------------missing script extract-translation(error)

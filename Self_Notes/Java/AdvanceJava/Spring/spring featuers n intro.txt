@@ -1,0 +1,46 @@
+Spring
+
+-a framework that provide lots of feature so that developer can work on thier application rather than worrying about non functional code
+-increase developers productivity and reduce application developement time
+-sprig framework is an open source application framework and inversion of control container for the java platform
+-spring handle infrastructure so that you can focus on ur application
+-spring framework is lightweight does not involve installation , start and stop activities associated with a container
+-spring has direct intgration layer with no sql database which is not supported by struts
+-servlet has web container to maintain all activities(web server nad container i.e tomcat)if new service is added then we need to rerun the code again web server has to be restarted.
+-spring has its own container (for core application we dont need container but for web application where request and response comes in picture we have web container  nut creation of beans class, manipulation of beans thier mapping is done by configuration file and by ioc container)
+-hibernate-database access mechanism
+-struts-web layer
+-EJBs-services like transactions,security and messaging
+-log4J-logging
+(uisng logging exception occurs during excution we can rectify that)
+
+use of above framework is difficult to maintain
+-difficult to test
+
+-instance creation is done by ioc in spring which i sinbuilt container...we dont need application server or webs server
+
+-features
+-ioc done thorugh dependency injection(user and car)loose coupling--configuer beans xml
+-Aop-enabling implementing cross cutting concern(start time and ennd time)
+-data access-jdbc and hibernate
+-mvc support
+-remote access framework-support remote access though RMI, web ser vice through SOAP and REST
+-remote management-JMX java management Transaction)to manage devices like printer though java
+-messaging-JMS communicate through message queue(both synchronous and asynchronous)
+-testing- unit testing module which give better unit testing capability
+-convension over configuartion-Spring roo is another framework which eases the development.This is rapid application development tool
+-Authentication and authorization-provided by spring security module
+authentication is who u r and autharization i swhat is allowed u to do?
+-
+-spring framework core layer
+-core -DI and IOC
+-beans-beanfactory interface is one of IOC container
+-conetxt-applicationContext which i sIOC container consume some configuraton file in xml form which consisit all bean, configure bean, integrate bean for depenedncy injection
+-expression language
+
+object coupling problem
+-object are injected with dependency injection using IOC 
+-depend on mock object i.e dummy object which doest have variables and constructor we dont provide implementation or we dont create object ourself
+-client needs a product of car i.e pbject of car but it will no create a manually using new object it wil ask to factory for object
+-factory instanciate a new concrete product and then return to the client the newly created product(casted to abstarct product class)
+

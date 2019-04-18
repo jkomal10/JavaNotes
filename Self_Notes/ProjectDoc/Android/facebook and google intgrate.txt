@@ -1,0 +1,44 @@
+
+google sign in android
+
+https://www.youtube.com/watch?v=2PIaGpJMCNs-------youutbe link for google sing in
+https://www.youtube.com/watch?v=SrAXmZkOpJI------youtube link for facebook sign in
+C:\Users\komjagta\AndroidStudioProjects\DeliveryApp\sdKeyStore.jks
+
+E3:B0:5B:D2:B6:5D:02:55:8D:5E:0B:F6:4B:75:45:CB:1D:AE:F8:0E SHA1
+
+https://support.google.com/googleapi/answer/6158849?hl=en#installedapplications&android
+
+461434414143-3ov6q0f96k4hfs89re6lfj06acgleu76.apps.googleusercontent.com--------clientId
+
+8km8opUDx8381KnR3wYRHj1E
+
+461434414143-6rbcn2omakg6p5apolp875ovntb0fv1f.apps.googleusercontent.com----OAuthClient
+461434414143-3ov6q0f96k4hfs89re6lfj06acgleu76.apps.googleusercontent.com-----wenClient Auto created for google sign in 
+
+facebook app id-496133987582017
+facebook appid-2100404633604010
+  run this commnad at keytool.exe which is in bin of java
+ keytool -exportcert -alias androiddebugkey -keystore (Your keystore path)\debug.keystore | (Your OpenSSL path)\openssl sha1 -binary | (Your OpenSSL path)\openssl base64
+  keytool -exportcert -alias androiddebugkey -keystore C:\Users\komjagta\.android\debug.keystore | C:\Installers\OpenSSL\openssl-1.0.2j-fips-x86_64\OpenSSL\bin\openssl sha1 -binary | C:\Installers\OpenSSL\openssl-1.0.2j-fips-x86_64\OpenSSL\bin\openssl base64
+  
+  hashkey------------47Bb0rZdAlWNXgv2S3VFyx2u+A4=
+  
+  use password abdroid
+  /////////////////////////////////////////////////////////////
+  SDApp
+  SHA1 E3:B0:5B:D2:B6:5D:02:55:8D:5E:0B:F6:4B:75:45:CB:1D:AE:F8:0E
+  google client id 971941466864-raoj8ccagod134p68scdclb2virpfltg.apps.googleusercontent.com
+  
+  facebook sign in app id 379231449562025
+  facebook sha1 47Bb0rZdAlWNXgv2S3VFyx2u+A4=
+  
+  make public access on
+  
+  
+  go to google developer console side
+create project
+go to android officicla site
+get a json file which is configuration file
+to get confiiguration file we need application package name and sign in certificate i.e SHA1 certificate
+to get SHA1 certificate from android studio click on gradel at right hand side then click on + button then go to android folder and double click on signinReport

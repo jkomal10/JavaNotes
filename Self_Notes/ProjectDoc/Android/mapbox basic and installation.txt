@@ -1,0 +1,14 @@
+Android mapbox
+username- JKomal
+Password-Password
+Token Name-mapKey
+token - sk.eyJ1IjoiamtvbWFsIiwiYSI6ImNqcHRmYXR3MzAya2E0OHBlYjhpcXFidG8ifQ.BRf1tcMTRnX_J8p8UEwTiw
+
+Default public token-pk.eyJ1IjoiamtvbWFsIiwiYSI6ImNqcHRmNzd0bTAzYXY0M28waTFyaDRtMHcifQ.8kzBL_dS-lx6OcM3Wqds3Q
+
+mapbox--https://www.mapbox.com/install/android/
+https://stackoverflow.com/questions/13855049/how-to-show-multiple-markers-on-mapfragment-in-google-map-api-v2-------multiple marker
+
+
+nirav mapbox token
+sk.eyJ1IjoibmlyYXZwYXRlbDQxMSIsImEiOiJjanAwdnVsOXgwY3Z2M3FvZmV6eGt5Z3dnIn0.vwOaq5FhCL5T3gyiNRg5_Q

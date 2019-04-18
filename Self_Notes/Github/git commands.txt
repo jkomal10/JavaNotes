@@ -1,0 +1,46 @@
+Following are commands to work with git
+Prequisites
+Install git bash on your system and create a account on git
+
+to download git visit following link
+https://git-scm.com/
+
+-to initiate local git repository create a folder open git bash and run following command.
+git init
+-to add file to the staging area or index
+git add <fileName>
+-to add all files from folder at once
+git add .
+-to check status of working tree
+git status
+-to commit changes to index
+git commit
+{press i and type message the press escape :wq}
+if you want to skip previous stage use following command
+git commit -m "message" 
+-to add remote repository
+git remote add origin <remote repository url>
+-to push local repository to remote repository
+git push -u origin master
+-to pull from remote repository
+git pull
+git pull origin master
+-to copy remote repository into machine
+git clone <remote repository url>
+-to add user 
+git config --global user.name <'username'>
+git config --global user.email <'email'>
+-to create new branch
+git branch <branchname>
+-to switch to another branch
+git checkout <branchname>
+-to merge another branch 
+git merge <branchname>.........push pull is necessary
+git config core.autocrlf true -----------to ignore warnings while pulling from remote repository
+
+git fetch
+git merge
+$ alias jk="git log --graph --all --decorate --oneline"
+
+git push --set-upstream origin master
+

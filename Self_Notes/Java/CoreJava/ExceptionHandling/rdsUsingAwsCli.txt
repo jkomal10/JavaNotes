@@ -1,0 +1,20 @@
+rds instance---pass-8?q39GxDzYUi$dd*5N.E5Eogb)rTSS*?
+
+ aws rds create-db-subnet-group --db-subnet-group-name rdssubnetgroup --db-subnet-group-description rdssubnetgroupdescription --subnet-ids "subnet-0278dfec74fd1ab64" "subnet-078be9ac0aed6864a"
+ 
+ aws rds create-db-instance --db-instance-identifier sg-cli-test --allocated-storage 20 --db-instance-class db.m1.small --engine mysql --master-username myawsuser --master-user-password myawsuser --db-subnet-group-name rdssubnetgroup
+
+aws rds  describe-db-instances------------to display details
+
+aws rds create-db-instance --db-name ORCL --db-instance-identifier demodatabase --allocated-storage 20 --db-instance-class db.m4.large --engine oracle-ee --master-username root --master-user-password password --port 1521 --license-model bring-your-own-license --db-subnet-group-name rdssubnetgroup---------create oracle rds instance
+
+aws rds create-db-instance --db-name ORCL --db-instance-identifier demodatabase1 --allocated-storage 20 --db-instance-class db.m4.large --engine oracle-ee --master-username root --master-user-password password --db-subnet-group-name rdssubnetgroup --port 1521 --engine-version 12.1.0.2.v12 --license-model bring-your-own-license --vpc-security-group-ids sg-034122b9d90392ce1 --publicly-accessible-------------ORACLE INSTANCE WITH PUBLICLY ACCESSIBLE(EDIT DNS HOSTNAME OF VPC)
+
+
+
+aws rds create-db-instance --db-name ORCL --db-instance-identifier demodatabase --allocated-storage 20 --db-instance-class db.m1.small --engine oracle-se2 --master-username root --master-user-password password --port 1521 --engine-version 12.1.0.2.v11 --license-model license-included --publicly-accessible true --db-subnet-group-name rdssubnetgroup
+
+
+
+
+aws create-db-instance --db-name ORCL --db-instance-identifier demodatabase1 --allocated-storage 20 --db-instance-class db.m4.large --engine oracle-ee --master-username root --master-user-password -password --db-subnet-group-name rdssubnetgroup --port 1521 --engine-version 12.1.0.2.v12 --license-model bring-your-own-license --publicly-accessible true

@@ -1,0 +1,19 @@
+Hashmap internally create array of buckets.
+ array contains 16 buckets. (0-15)
+ Each bucket is node or linked list .
+ Map<String,integer> map=new Hashmap<>();
+ ex-to inserrt values into hashmapmap
+ map.put("abc_key",10);
+ put(key k,value v)
+ it will calculate hashcode of key
+ hashcode=hash(key);/////111112
+ -hashcode is used to retrieve value from bucket and to store values into index.it works fast
+ -index=hash&(n-1) //it will return index
+ so if index is 4 then node is created at index 4 which contains key , value,hashcode and next (next contains address of next node)
+ -111112/abc/10/next    node contain this data
+ -if we put key as null it will goes into zeroth index or bucket
+ map.put("null",4);
+ 
+ 
+ 
+ 

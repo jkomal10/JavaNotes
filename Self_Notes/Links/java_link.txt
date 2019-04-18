@@ -1,0 +1,10 @@
+https://www.youtube.com/watch?v=UgQobNbRNZ4---------oneToMany
+
+https://www.youtube.com/watch?v=V3rvY9j1ro0------------springBootLogin
+
+http://toppertips.com/ocjp-practice-papers-java-basics/ certifications_questions
+
+inheritance practicle questions-------https://javaconceptoftheday.com/java-inheritance-practice-coding-questions/2/ 
+https://springframework.guru/spring-framework-annotations/------------------annotations
+https://www.softwaretestinghelp.com/core-java-interview-questions/---------interview question
+https://www.geeksforgeeks.org/interface-nested-class-another-interface/ ------nested interface

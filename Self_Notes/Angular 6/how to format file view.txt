@@ -1,0 +1,1 @@
+cltr K + cltr f to format html file in angular visual studio

@@ -1,0 +1,50 @@
+create user c##demo identified by  demo;
+
+grant create session to C##demo;
+grant select any table  to C##demo;
+conn C##demo/demo;
+select * from C##sample1.employees;
+delete from c##sample1.employees where employee_id=100;
+revoke select any table from C##demo;
+grant select on C##sample1.employees to C##demo;
+grant connect to C##demo;
+
+
+create user c##demo identified by  demo;
+
+grant create session to C##demo;
+grant select any table  to C##demo;
+conn C##demo/demo;
+select * from C##sample1.employees;
+delete from c##sample1.employees where employee_id=100;
+revoke select any table from C##demo;
+grant select on C##sample1.employees to C##demo;
+grant connect to C##demo;
+grant select on dkpdb.employees to C##demo; 
+select * from dba_users where username='DKPDB';
+grant C##dkrole to C##demo;
+drop view C##sample1.sampleview;
+
+create view sampleview as select * from departments;
+
+EXECUTE DBMS_STATS.GATHER_TABLE_STATS ('C##dk',departments,'DBMS_STATS.AUTO_SAMPLE_SIZE','FOR ALL',DBMS_STATS.DEFAULT_DEGREE,'ALL',DBMS_STATS.AUTO_CASCADE);
+
+select * from dba_users;
+EXECUTE DBMS_METADATA.SET_TRANSFORM_PARAM(
+     DBMS_METADATA.SESSION_TRANSFORM,'STORAGE',false);
+     
+     SELECT TABLE_OWNER, TABLE_NAME, SYNONYM_NAME
+    FROM DBA_SYNONYMS
+    WHERE OWNER = 'JWARD';
+    
+    ALTER SESSION SET container =orcl;
+    
+    ALTER PLUGGABLE DATABASE OPEN READ WRITE [RESTRICTED] [FORCE];
+    
+    ALTER PLUGGABLE DATABASE OPEN READ WRITE FORCE;
+    select * from dba_users where username='DKPDB';
+    create user 'C##demo' identified by demo;
+    
+    select * from all_views;
+    select * from all_users;
+

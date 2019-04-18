@@ -1,0 +1,21 @@
+ 
+Project Name : S3 bucket handle with Java
+Desc : AWS Java project which create, delete bucket and also upload files and images to s3 bucket.
+prerequisite  : aws S3,java(need to install AWS SDK)
+created By :   Komal Jagtap
+ 
+Project Name : AWS lambda Project to generate PDF
+Desc : AWS lambda Project to read data from RDS and generate pdf and store pdf into s3 buckets. Template needed for jasper library also read from S3 bucket.
+prerequisite  : aws S3,java(need to install AWS SDK) and Create Lambda function in AWS . Also need to create AIM role.
+created By :   Komal Jagtap
+
+Project Name : VPC in AWS
+Desc : How to create VPC and subnet Group in AWS and How to attach elastic IP address.
+prerequisite  : aws account
+created By :   Komal Jagtap
+
+Project Name : SNS notification by email on modification in S3 bucket.
+Desc : SNS creation for notification by email if user upload or delete from s3 bucket.
+prerequisite  : aws account
+created By :   Komal Jagtap
+

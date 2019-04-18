@@ -1,0 +1,52 @@
+Jenkins-
+open source---written in java---continouos integration tool with plugins. Plugins allows integration of various devOps stages.
+it is an java application-PLATFORM INDEPENDENT
+-used for continouos integration and continuous delivery
+-as developer check in their code to shared repository (git, bigbucket) and if eod we integrate whole code and bulid it, it will give error but if if we use jenkins then as we send code to shared repository it will it will pass to jenkins , jenkin build it , perform some testing on it and then give success or failure result to the developer. 
+
+installation-
+download jenkins jar
+-go to folder where jenkins war is present
+go to command promt
+run command java -jar jenkins.war
+java -jar jenkins.war--httpPort=9090 
+it will run on prot 8080
+-copy password from cmd
+-go to browser----http//localhost:8080
+-enter password
+-suggested plugins
+-create first admin user
+-install required plugins
+-get started with jenkins
+
+
+-how to setup jenkins on tomcat
+-why?
+we can install on standalone server
+it has its own servlet container
+prerequisites-tomcat 5 or above
+java 1.7 or above
+-copy and paste jenkins.war into tomact/webapps folder
+-goto cmd ---go to tomcat/bin directory
+-make all file excutebale using commad chmod +x *.sh
+-start tomcat usig /startup.sh
+to shutdown tomcat shutdown.sh
+-verify tomcat started-http//localhost:8080/jenkins
+-verify jenkins running on tomcat
+-
+
+create job
+enter name---freestyle project---
+restart jenkins
+
+
+
+
+how does jenkins works
+-developer no need to wait for result
+-build-test-deploy
+-since after every commit to the source code an auto build is triggered and then it is automatically depolyed on the test server
+-if the test results shows that there is a bug in the code then the developers only have to check the last commit made to the source code
+-this also increase the frequency of new software release
+-the concerned teams are always provided with the relevant feedback
+-continouos integration-frequent commit it will build every commit and deploy it on test server

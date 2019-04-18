@@ -1,0 +1,32 @@
+SELECT * FROM all_cons_columns WHERE table_name = 'departments' and owner='C##SAMPLE1';
+
+select * from ALL_CONSTRAINTS WHERE table_name = 'DEPARTMENTS' and owner='C##SAMPLE1';
+
+select * from All_CONSTRAINTS where OWNER = 'C##SAMPLE1' and TABLE_NAME = 'DEPARTMENTS';
+
+SELECT owner, table_name FROM dba_tables where OWNER = 'C##SAMPLE1';
+select * from dba_indexes;
+
+exec dbms_stats.gather_index_stats('sysdba', 'my_index_name');
+select * from C##SAMPLE1.departments;
+ANALYZE TABLE C##SAMPLE1.departments VALIDATE STRUCTURE CASCADE; 
+EXECUTE dbms_stats.gather_schema_stats('c##SAMPLE1', cascade=>TRUE);
+
+ANALYZE TABLE C##SAMPLE1.departments COMPUTE STATISTICS;
+select * from dbms_stats.gather_schema_stats where owner='C##SAMPLE1';
+select * from DBMS_STATS where ga
+select * from all_procedures;
+SELECT  GATHER_INDEX_STATS from dba_tables;
+
+SELECT * FROM DBA_SCHEDULER_JOBS;
+
+select * from all_procedures;
+select * from dba_procedures;
+select * from user_procedures;
+
+select * from all_views;
+select * from user_views;
+select * from dba_views;
+
+EXECUTE DBMS_STATS.GATHER_SCHEMA_STATS('C##SAMPLE1',DBMS_STATS.AUTO_SAMPLE_SIZE);
+ exec dbms_stats.gather_index_stats('C##SAMPLE1', 'LOC_ID_PK', null, DBMS_STATS.AUTO_SAMPLE_SIZE);

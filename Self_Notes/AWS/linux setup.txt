@@ -1,0 +1,6 @@
+Create linux aws instance
+use following pdf
+https://d1.awsstatic.com/Projects/P5505030/aws-project_Jenkins-build-server.pdf
+
+. Import a key file from Jenkins-CI to enable installation from the
+package: unknown package

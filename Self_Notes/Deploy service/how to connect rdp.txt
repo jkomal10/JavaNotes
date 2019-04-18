@@ -1,0 +1,6 @@
+how to connect rdp
+ip_address:22
+
+52.168.12.240 :22
+username-azureuser
+pass-AzureUser@2019

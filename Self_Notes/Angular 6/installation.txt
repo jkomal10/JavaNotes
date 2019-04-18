@@ -1,0 +1,15 @@
+run following commands on cmd to check node installed or not
+npm --version
+node --version
+
+open node command promt and run following commands
+
+npm install -g @angular/cli@latest -------------install angularjs
+to run----------ng serve
+to create componenet---ng g c component_name
+to create module ng g module module_name --flat
+to create module routing----ng g module application-routing --flat --module=application(component_routing)
+
+npm install rxjs-compat-----------to install rxjs
+
+index.ts error--------------ng serve(restart your application)

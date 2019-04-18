@@ -1,0 +1,2 @@
+ALTER SESSION SET container =pdborcl;.....add pluggable database
+ALTER PLUGGABLE DATABASE OPEN READ WRITE FORCE;....open pluggable database in read write mode

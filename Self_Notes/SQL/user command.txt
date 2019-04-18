@@ -1,0 +1,9 @@
+1.to get size of database-
+select owner, sum(bytes)/1024/1024 Size_MB from dba_segments group  by owner;
+2. to list all triggers,views,procedures,functions from databse
+select * from  user_dependencies where referenced_owner='PDBKOMAL';
+3.  to get list of all tables from database-
+EXECUTE DBMS_METADATA.SET_TRANSFORM_PARAM(DBMS_METADATA.SESSION_TRANSFORM,'STORAGE',false);
+SELECT DBMS_METADATA.GET_DDL('TABLE',u.table_name) FROM USER_ALL_TABLES u WHERE u.nested='NO'  AND (u.iot_type is null or u.iot_type='IOT');
+4. to list all views trigger,table,sequences,procedures from database-
+SELECT OBJECT_NAME, OBJECT_TYPE FROM USER_OBJECTS;

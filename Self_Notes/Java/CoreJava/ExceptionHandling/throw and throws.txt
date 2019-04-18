@@ -1,0 +1,79 @@
+throw And throws
+
+-programmer throwing exception object towards JVM
+-if we write code without throw then implicitly main method create exception object handle to JVM then JVM check is there any handling code if not, then it will call default exception, default exception terminate main method,remove entry of main kmethod from stack and terminate program abnormally
+
+-but if we write code wih throw keyword then it will create exception object and handover to JVM explicitly then remaining method is same.
+(thow new AE("divided by zero"))
+
+-throw keyword objective is to handover our create exception object to the JVM manually.
+-hence the result of following two pragrams exacly same.
+class Test{
+psv mian(String[] args)
+{															
+syso(10/0);
+}
+}
+op//  Exception in THead main "java.lang.AE:/by zero" at Test.main()
+in this case main method is resposible to create exception object and handover to the JVM ,
+
+
+class test{
+psv main(String[] args)
+{
+throw new AE("/ by zeo ecplicitly");
+}
+}
+op//  Exception in THead main "java.lang.AE:/by zero explicitly" at Test.main()
+In this case programmer creating exception object explicitly and handover to the JVM manually.
+
+-Best use of throw keyword is for user defined exceptions or customized exceptions.
+
+case 1:
+-class test{
+static AE e;
+psv main(String[] args)
+{
+  throw e;
+}
+}
+op- nullPointerException
+ thow e if e refers null then we will get nullPointerException.
+ instead of static AE e if we write static AE e=new AE() the we won't get nullPointerExceptioninter 
+ 
+ case2;
+- After throw statement we are not allowed to write any statement directly otherwise we will get compile time error saying unreachable statement.
+-syso(10/0);
+syso("hello");
+
+op////RE
+
+thow new AE("/by zero");
+syso("hello");
+op-compile time error statement not reachable syso("hello");
+
+
+case 3:
+-throw new test()(test class)
+-incompatible types found:test required java.lang.throwable
+-throw keyword used to throw throwable types only otherwise it will give compile time error that incompatible types
+-if test class extends runtimeException the it become throwable types so it won't give compile time error.
+
+-we can use throw keyword only for throwable types , if u r trying to use for normal java objetcs we will get compile time error saying incompaible types.
+
+case 4:
+throw new Exception give compile time error as it is checked exception but 
+throw new RunTime exception give runtim eerror as it is unchecked exception
+
+case 5:
+throw new Exception give compile time error but throw new error give runtime exception that exception in thread main"java.lang.Error" at test.main as it is unchecked exception
+
+-inside try block if there is no chance of rising excepton then we cant write catch block for that exceptoin it will give  compile time error that exception java.lang.IE is never throws in respective try block....this rule is applicable for fully check exceptions
+
+we can write unchecked and partial exceptions in catch block is there is no chance of exception occur.
+
+-
+
+
+
+

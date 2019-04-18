@@ -1,0 +1,50 @@
+
+Exception in java
+An unwanted ,unexpected event that disturbed normal xcution flow of program
+ex-file not found exception,sql exception
+objective-graceful terminaton of program
+         -program should not block any resource before termination
+		 -should not loose or miss anything
+exception handling-doesn't mean repairing exception,defining alternavtive way to excute/continue rest of the program normally ,
+ex-program requirement is to read data from remote file locating at landon at run time if landon file is not available, our program should not be terminated abnormally,we have to provide some local file to continue rest of the progam normally.This way of defining alternative is exception handling.
+
+try{
+read data  from file locating at landon
+}catch(FileNotFoundexception)
+{
+use local file to continue rest of the program normally
+}
+
+Run time stack mechanism:-
+For every thread jvm create runtime stack-Ecah and evry method call in that thread stored in that stack
+-each entry in stack is called activation record/Stack frame
+-after successfully excution of method entry form stack is removed and at the end stack is empty so before termination of main thread stack is deleted/destroyed by jvm
+
+for eevry thread jvm will create run time stack.
+-each and every method call performed by that thread will be stored in the corresponding stack.
+-each entry in the stack is call stack fram/activation record.
+-after compliting every method call the corresponding entry from the stack will be removed.
+-after compliting all method calls, the stack will become empty and that empty stack will be destroyed by jvm just before terminating that thread.
+
+class test{
+psv main()
+{
+  doStuff();
+}
+psv doStuff()
+{
+doMoreStuff();
+}
+psv doMoreStuff()
+{
+syso("hello");
+}
+
+						doMoreStuff
+						dostuff
+stack                    main()
+}
+
+
+
+

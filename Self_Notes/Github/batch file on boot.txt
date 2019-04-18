@@ -1,0 +1,11 @@
+https://stackoverflow.com/questions/22851160/how-to-run-a-sh-file-at-aws-ec2-reboot-startup---------------------------batch on boot
+
+
+login as root..use sudo su(otherwise we are not able to change rc.local file)
+create batch file
+then chnage rc.local file which is in etc folder
+add file name with absolute path in rc.local file
+
+chown root.root /home/mysh.sh--to chnage file ownership
+chmod u+x filename.sh--to make it excutable
+reboot from aws console

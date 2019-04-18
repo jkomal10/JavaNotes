@@ -1,0 +1,6 @@
+for ngmodel formsModule is must
+name is also imp
+value is imp tag
+
+
+https://www.telerik.com/kendo-angular-ui/components/dropdowns/dropdownlist/add-new-item/

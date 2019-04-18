@@ -1,0 +1,32 @@
+jenkins integration with git
+
+-delivery pipeline in jenkins
+pipleine-----multiple task executed in sequence
+-for fist job add post buil n for remaining build trigger
+-install delivery pipeline plugins
+-click on + icon n setup 
+-autobuild
+-manual build  
+-rebuild
+-view
+
+
+
+build pipeline 
+-build pipeline plugins
+-+ icon 
+select build pipeline plugin
+-layout
+initial job nae of ur application
+-number of diplayed view
+-configure-diplay option-console output-new console output
+-rerun
+-
+
+
+Jenkins blue ocean
+-ui for user to reduce clutter and increase the clarity.
+-Blue ocean is a new user interface for jenkins and provides an interative view for jenkins pipeline.
+-jenkins version above 2.7 
+-blue ocean plugin
+- 

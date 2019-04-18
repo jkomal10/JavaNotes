@@ -1,0 +1,12 @@
+how to change applictaion icon
+
+Here are my steps for the task:
+
+Create PNG image file of size 512x512 pixels
+In Android Studio, in project view, highlight a mipmap directory
+In menu, go to File>New>Image Asset
+Click Image Button in Asset type button row
+Click on 3 Dot Box at right of Path Box.
+Drag image to source asset box
+Click Next (Note: Existing launcher files will be overwritten)
+Click Finish

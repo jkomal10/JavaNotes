@@ -1,0 +1,47 @@
+
+SQL> CREATE PLUGGABLE DATABASE pdb3 ADMIN USER pdbAdmin IDENTIFIED BY pdbAdmin create_file_dest='/app/oraclemigration/oradata/orcl/';
+
+database pdb3user pdbkomal/pass-pdbkomal
+rds---mydbinstance master username-pdbkomal/pass-pdbkomal
+databse name-ORCL
+endpoint-mydbinstance.cii8cnp0viyx.eu-central-1.rds.amazonaws.com
+
+SELECT pdb_name, status FROM   dba_pdbs ORDER BY pdb_name;
+ALTER PLUGGABLE DATABASE pdb3 OPEN READ WRITE;
+SELECT name, open_mode FROM   v$pdbs ORDER BY name;
+
+
+ORA-65011: Pluggable database PDBORL does not exist.
+
+
+SQL> alter session set container=pdborcl;
+
+Session altered.
+
+SQL> create user komal identified by komal;
+create user komal identified by komal
+                                *
+ERROR at line 1:
+ORA-01109: database not open
+
+
+SQL> alter database open;
+
+Database altered.
+
+SQL> create user komal identified by komal;
+
+User created.
+
+SQL> grant connect,resource to koma;
+grant connect,resource to koma
+                          *
+ERROR at line 1:
+ORA-01917: user or role 'KOMA' does not exist
+
+
+SQL> grant connect,resource to komal;
+
+Grant succeeded.
+
+SQL>

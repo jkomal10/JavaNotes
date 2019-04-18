@@ -1,0 +1,13 @@
+
+Android important links
+https://dzone.com/articles/populate-spinner-from-json-data------------dropdown fill with json data android
+
+https://docs.mapbox.com/android/navigation/examples/waypoint-navigation/
+https://docs.mapbox.com/android/navigation/examples/waypoint-navigation/
+https://docs.mapbox.com/android/navigation/overview/navigation-ui/
+
+https://www.youtube.com/watch?v=2PIaGpJMCNs&pbjreload=10&feature=youtu.be
+
+https://developers.google.com/identity/sign-in/android/start-integrating?refresh=1
+
+implementation 'com.github.bumptech.glide:glide:4.7.1'

@@ -1,0 +1,25 @@
+create user C##testuser identified by test;.......to create user
+
+select * from all_users;
+select * from dba_users;
+
+1.To findout role assign to user
+select * from dba_role_privs where ;.............find privilege assign to all users;
+select * from dba_role_privs where grantee='username';
+select * from dba_role_privs where grantee='C##TESTUSER';............find privilege of specified user
+
+2. list user with granted role
+select * from user_role_privs
+
+3.list roles of  role
+select * from role_role_privs where role='rolename'
+
+4.to gather statistics on the SCOTT schema of a database:
+EXEC dbms_stats.gather_schema_stats('SCOTT', cascade=>TRUE);
+
+5.to generate statistics for a single table, and optionally for related table indexes:
+EXEC dbms_stats.gather_table_stats('SCOTT','EMP',cascade=>TRUE);
+In this case we are generating statistics for the EMP table in the SCOTT schema. Again we use the cascade parameter to insure all of the indexes get analyzed.
+
+6.to collect table and column statistics for all tables in the OE schema with auto-sampling:
+EXECUTE DBMS_STATS.GATHER_SCHEMA_STATS('OE',DBMS_STATS.AUTO_SAMPLE_SIZE)

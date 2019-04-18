@@ -1,0 +1,9 @@
+aws ec2 describe-regions
+cat userdata.txt
+<powershell>
+@admin=[adsi]{"WinNT://./administartor,user"}
+$admin.PSBase.
+
+aws ec2 run-instances --image-id ami-42638120 --count 1 --instance type t2.micro --key-name windows-2016-APP-keypair --user-data file://userdata.txt --region ap-southeast-1 --security-group-ids sg-0130a759e02c6c278
+
+aws ec2 describe-instances-id i-

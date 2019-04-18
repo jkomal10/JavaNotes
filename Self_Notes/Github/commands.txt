@@ -1,0 +1,59 @@
+https://www.youtube.com/watch?v=SWYqp7iY_Tc--------youtube site
+
+
+
+git init
+git config --global user.name 'komal jagtap'
+git config --global user.email 'komalv.j45@gmail.com'
+git add index.html
+git status
+git add index.html
+git add .
+git add * .html
+
+git commit
+press i
+initial commit 
+press escape :wq
+
+
+
+git add.
+git commit -m 'Changed index.html'
+
+
+git -gitignore
+touch log.txt
+gti add .
+
+
+to create new branch
+git branch branch_name
+gti checkout branch_name....to switch between branch use checkout with branch_name
+
+if u r in master branch and wants to merge with another then
+git merge login(another branch_name)
+press i
+added login
+press escape  :wq
+
+git remote
+git push -u origin master
+
+to copy entire folder or to make duplicate
+git clone and clone url
+
+
+git
+push master to remote repository
+
+git  remote  add origin remote repository name
+ git push -u origin master
+
+git remote -v...to verify
+git push -u origin master(origin is remote repository and master is local repository)
+
+git fetch origin master:tmp
+git rebase tmp
+git push origin HEAD:master
+git branch -D tmp

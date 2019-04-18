@@ -1,0 +1,7 @@
+for database design-------https://www.dbdesigner.net/designer
+for uml -----draw.io
+for uml-lucidchart
+
+https://app.smartsheet.com/b/home--------gantt chart link
+https://www.lucidchart.com/documents/edit/b8ce3bdf-428a-414b-866f-8007a1330530/0--------uml diagram link
+https://www.dbdesigner.net/designer/schema/new----------databse design diagram

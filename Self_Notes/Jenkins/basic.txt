@@ -1,0 +1,6 @@
+ 
+OMf$cB.Dx@!6SR%P!.urf9DCwgcc23lj -----instance pass
+https://github.com/jkomal10/jenkin.git--------git url
+ 
+--aws s3 cp target/SpringMvcUser.war s3://jenkins-bucket-gasvdvsjcewbvgkrgvnk/SpringMvcUser.war
+aws elasticbeanstalk rebuild-environment --environment-name=Test-env ---------commands

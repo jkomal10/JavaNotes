@@ -1,0 +1,29 @@
+Signed APK
+
+keytool -genkey -v -keystore my-release-key.keystore -alias alias_name -keyalg RSA -keysize 2048 -validity 10000
+
+keystore password- Dharmendra
+
+https://developer.amazon.com/app-testing-service/tya/results.html?testId=fyJ7QZ0rY0nrQfXZFDP4NzVos9EkoNbCXQiL2AaP-Y0hq2Eaz0_jgpyZGst14DXPMW8TBgiAFx1mYDKevbL5uQ 
+
+https://stackoverflow.com/questions/16709848/build-unsigned-apk-file-with-android-studio 
+
+https://we.tl/t-l6sR2F2A1R
+
+
+ zipalign -v 4 C:\Users\komjagta\AndroidStudioProjects\SmartDelivery\app\release\app-release.apk C:\Users\komjagta\AndroidStudioProjects\SmartDelivery\app\release\SmartDelivery.apk
+
+
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore my-release-key.keystore app-release.apk alias_name 
+ jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore my-release-key.keystore app-release-unsigned.apk alias_name
+ 
+  zipalign -v 4 C:\Users\komjagta\AndroidStudioProjects\SmartDelivery\app\build\outputs\apk\release\app-release-unsigned.apk  C:\Users\komjagta\AndroidStudioProjects\SmartDelivery\app\build\outputs\apk\release\smart-delivery.apk
+  
+  C:\Users\komjagta\AppData\Local\Android\Sdk\build-tools 
+  
+  to generate unsigned url-----https://stackoverflow.com/questions/16709848/build-unsigned-apk-file-with-android-studio
+  
+  
+  C:\Users\komjagta\AndroidStudioProjects\SmartDelivery\app
+  
+  C:\Users\komjagta\AndroidStudioProjects\SmartDelivery\smart-delivery.jks

@@ -1,0 +1,28 @@
+Spring
+
+developer-Red johnson
+org-spring org/pivotel
+inintial name-interface 21----spring(season)
+
+Spring ia an alternative to EJB
+-in EJB applications are heavier and tighly coupled
+-using spring applications we become light and loosely coupled
+-EJB have dependency on application server so it is heavy weight, spring use spring jar only so  no dependency on server.
+-view
+-controller
+-model---DAO
+		-business
+		-service
+
+
+spring boot is a tool which create spring based applicaion which is standalone and we can just run it
+
+spring ia an application framework tobuild business enterprise application
+-programming and configuration mode
+-infrastructure support
+-build classes(pojo) and use annotation
+
+problems with spring-
+-huge framework
+-multiple setup steps
+multiple configuration phase and build and deploy steps

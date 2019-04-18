@@ -1,0 +1,106 @@
+Customiz""ed  Exception(using try -catch)
+try
+{
+risky code
+}
+catch(Exception e)
+{
+  handling code
+}
+
+-It is highly recommended to handle exceptions.
+-The code which may rise an exception is called risky code and we ahve to define that code inside try block and corresponding hadling code we have to define inside catch block.
+ex-
+class test{
+psv main(String[] args)
+{
+   syso("Stmt1");
+   try{
+   syso(10/0)
+   }catch(Eception e)
+   {
+   syso(10/2);
+   }
+   syso("stmt3")
+}
+}///////////////normal termination
+
+Control flow in try catch-
+try{
+stsm1
+stmt2
+stmt3
+catch(x e)
+{
+stmt4
+}
+stmt5
+}
+-case 1:If there is no exception then order of excution is 
+stmt1,2,3,5
+normal termination
+
+case 2:
+if exception occured at stmt2 then excution flow is 1,4,5 normal termination
+
+case 3:
+if exception rised at statement2 and corresponding catcg blocknot matched
+then excution flow is like stamt 1, abnormal termination.
+
+case 4;
+if exception rised at stmt4,or statement5 
+(if any statement which is not part of try block then it will always give abnormal termination)
+flow of excution will be abnormal always
+
+note-within the try block if anywhere exception rised then rest of the try wont be excuted even though we handle that exception hence within the try block we have to take only risky code and lenght of try block should be as less as possible.
+-In addition to try block there may be chance of rising exception inside catch and finaly blocks.
+-If any statement which rise exceptoin which is not part of try block and rises exception then it is always abnormal termination.
+-methods to print exception information
+-ex-printStackTrace
+syso(e)
+syso(e.toString)
+
+e.printStackTrace - display name description and location of exception details-stack trace
+syso(e)or syso(toString)-display name and description only
+syso(e.getmessage())-only description of exception
+-All these methods are member functions of throwable class.
+
+class test{
+psv main(String args[])
+{
+  try{
+  syso(10/0);
+  }
+  catch(Exception e)
+  {
+   syso(e);
+   syso(toString());
+   e.printStackTrace();
+   syso(e.getmessage());
+  }
+}
+}
+
+Intrenally default exception handler will use printStackTrace method to print exception information to the console.
+
+try with multiple catch blocks-
+The way of handling an exception is varied from exception to exception hence for every exception type it is highly recommended to take separate catch block i.e try with multiple catch block i salwast possible and recommended to use
+try{
+risky code
+}
+catch(SQLException){}
+catch(FileNotFoundException){}
+
+-for try with multiple catch blokcs present then the order of catch block s is very important, we have to take child first then parent otherwise compiletime error saying exception xxx has already been caught.
+-if we declare same exception in two different catch block then compile time error occured.
+-try{risky code}
+catch(AE e){}
+catch(AE e){}
+
+
+
+
+
+
+
+

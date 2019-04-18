@@ -1,0 +1,28 @@
+AWS PARTNER NETWORK
+
+cloud computing-
+-on demand delivery of IT resources and application via internet wit pay as you pricing.
+-secure environment
+-capacity grow n shrink
+-increase agility-speed,experimetation,culture of innovation
+-low cost experimentation
+-central resion place
+-region in collection of two or more availablity zone in a specific area
+-region are completely indepent of each other
+-availability zones are isolated collection of aws resources, analogous to cluster of data centers
+az-Assosiated  with data center within each region
+az-optimized latency
+az-minimize cost
+az-protect your application from failure
+
+edge location -robust content delivery network can be use entire websites,
+ dynamic,static and streaming contents,
+request routed to the nearest edge location,
+faster content delivery
+
+Pace of innovation
+-customer benefits from services when they r release
+-customer can take advantages of regular update
+-aws provide 139 features and services for storage,networking ,ml,iot,ai,mobility,app development and deployment,hybrid,
+-311 features 4653 in 2006
+-

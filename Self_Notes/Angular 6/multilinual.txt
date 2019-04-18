@@ -1,0 +1,22 @@
+multilingual in cat
+
+npm install -g @angular/cli
+cd project
+npm install -g @angular/cli
+npm install @biesbjerg/ngx-translate-extract --save-dev
+extract-translations: `ngx -translate -extract --input ./src --output ./src/assets/i18n/*.json --clean --sort --format namespaced-json --marker _`
+npm run extract-translations
+ng serve
+
+
+
+about text
+<strong>Cloud Assessment Tool</strong> is developed to assist an application
+                                for cloudability. It also provides information for <strong> Migration Patterns</strong> 
+                                (Rehost, Public paas, Replateform) and <strong>cloud providers</strong> (Public, Private).</p>
+                                <p>It is a <strong>Configurable Application</strong>. As per need you can add many clients and different questions for them.</p></div>
+                          </div>
+						  
+						  
+						  
+	 "extract-translations": "ngx-translate-extract --input ./src --output ./src/assets/i18n/en.json --clean --sort --format namespaced-json --marker _"

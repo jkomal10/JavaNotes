@@ -1,0 +1,15 @@
+
+Angular Important commands
+
+
+ng g class class_name --type=model
+
+ng g component my-new-component
+ng g directive my-new-directive
+ng g pipe my-new-pipe
+ng g service my-new-service
+ng g class my-new-class
+ng g guard my-new-guard
+ng g interface my-new-interface
+ng g enum my-new-enum
+ng g module my-module

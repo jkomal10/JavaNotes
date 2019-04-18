@@ -1,0 +1,10 @@
+svn setup
+
+create folder 
+right click and select svn checkout
+svn credentials same as ur login credentials
+after selecting svn cekcout it will ask for url 
+https://scm-coconet.capgemini.com/svn/repos/vwc_aa/repository 
+click on ok
+then it will as for credentials enter your login credentials
+it will download whole repository in you local repository

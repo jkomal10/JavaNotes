@@ -1,0 +1,5 @@
+adb devices --to list devices
+adb shell
+appdata-android
+
+emulator -list-avds

@@ -1,0 +1,18 @@
+
+to see all the permissions of the objects.
+select 'Proc' = SCHEMA_NAME(p.schema_id)+'.'+p.name
+    , 'Type' = per.state_desc, 'Permission' = per.permission_name
+    , 'Login' = pri.name, 'Type' = pri.type_desc 
+    , *
+From sys.objects as p
+left join sys.database_permissions as per on p.object_id = per.major_id
+left join sys.database_principals as pri on per.grantee_principal_id = pri.principal_id
+where p.object_id = 87671360
+
+SELECT Name
+FROM sys.procedures
+WHERE OBJECT_DEFINITION(OBJECT_ID) LIKE '%TableNameOrWhatever%'
+
+get list of all table
+EXECUTE DBMS_METADATA.SET_TRANSFORM_PARAM(DBMS_METADATA.SESSION_TRANSFORM,'STORAGE',false);
+SELECT DBMS_METADATA.GET_DDL('TABLE',u.table_name) FROM USER_ALL_TABLES u WHERE u.nested='NO'  AND (u.iot_type is null or u.iot_type='IOT');

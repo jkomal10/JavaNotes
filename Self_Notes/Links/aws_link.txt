@@ -1,0 +1,7 @@
+https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Scenarios.html
+
+http://www.beginninglinux.com/home/backup/rsync-server-to-local-using-ssh-and-pem-key
+
+https://serverfault.com/questions/754690/rsync-to-aws-s3-bucket
+
+http://www.anthonychambers.co.uk/blog/rsync-to-aws-ec2-using-.pem-key/9

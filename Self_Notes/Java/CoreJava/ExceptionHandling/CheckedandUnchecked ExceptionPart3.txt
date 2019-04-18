@@ -1,0 +1,45 @@
+Checked and Unchecked Exception
+
+-Exceptions are occured at run time only
+-Exceptions which are checked by compiler for smooth excution of program at run time these exceptions are called checked exception
+ex-
+class test
+{
+psvmain(String[] args)
+{
+printWriter pw=new PrintWriter("file.txt");
+pw.println("hello");
+}
+}
+
+CheckedException:-unreported exception java.io.FIlenotfoundExceptoin;
+must be caught or declare to be thrown
+
+if there is chance of exception occur we should handle it by try-catch or by using throws keyword otherwise code will not run/excute
+
+Checked exception VS unchecked Exception
+-The exceptions which are checked by compiler for smooth execution of program at run time are called checked exceptoins
+ex-FileNotFoundExceptoin
+
+-Exceptions which are not checked by compiler whether programmer handling or not are called unchecked exception.
+ex-ArithmeticException
+-NullPointerException
+ 
+ Whether checked or unchecked eception exception occurd at run time only,there i sno chance to occurd exception at run time only.
+ Run time exception and its child classes, error and its child classes are unchecked except this remaining are checked exception.
+ 
+ 
+ -Checked heirarchy
+ Fully check VS partially checked
+ -A checked exception is siad to be fully checked exception if and only if all its child classes also checked.
+ ex-IOException,InterruptedException
+ A checked exception is said to be partially checked if and only if some of its child classes are unchecked.
+ ex-Exception,Throwable,
+ 
+ The only possible partially checked exception in java are 
+ -1.exception
+ -2.throwable
+ 
+ 
+ 
+ 

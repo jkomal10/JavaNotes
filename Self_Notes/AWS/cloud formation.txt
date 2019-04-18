@@ -1,0 +1,1 @@
+Please see the documentation for authorizing DBSecurityGroup ingress. For VPC, EC2SecurityGroupId is required. To authorize only the source address of this request (and no other address), pass 72.21.217.138/32 as the CIDRIP parameter.

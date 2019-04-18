@@ -1,0 +1,20 @@
+select * from C##sample1.employees;
+grant UPDATE on C##sample1.employees to C##TEST;
+
+select * from ALL_COL_PRIVS;
+
+select * from dba_role_priv;
+
+select * from dba_role_privs where grantee = 'C##TEST';
+select * from DBA_SYS_PRIVS; 
+
+select * from DBA_SYS_PRIVS where grantee='C##DEMO';
+
+select * from dba_users;
+
+SELECT * FROM DBA_TAB_PRIVS;
+
+
+drop view C##sample1.sampleview;
+
+SELECT * FROM user_TAB_PRIVS where table_name='EMPLOYEES';

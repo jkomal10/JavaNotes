@@ -1,0 +1,3 @@
+https://angular-templates.io/tutorials/about/angular-internationalization-i18n-multi-language-app
+
+https://github.com/ngx-translate/core/issues/738----translet text from component.ts
