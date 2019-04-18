@@ -1,0 +1,8 @@
+java importtant link
+http://javabypatel.blogspot.com/2017/07/when-to-use-abstract-class-and-interface-difference-between-them.html
+https://docs.oracle.com/javase/tutorial/java/IandI/abstract.html 
+https://www.geeksforgeeks.org/interface-nested-class-another-interface/ ---------nested interface
+
+interface-loose coupling
+multiple inheritance
+complete abstraction

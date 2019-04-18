@@ -1,0 +1,44 @@
+Customized or User defined exceptions
+
+-sometimes to meet program requirements we create our own exceptions are called user defined exceptions or customized exceptions.
+-toYoungException,tooOldEXception
+-InsufficientFundsExceptions
+
+ex-class TooYoungExceptoin extends RuntimeException
+{
+      TooYoungExceptoin(STring s)
+	  {
+		super(s);
+	  }
+}
+class ToOldException extends RunTimeEXception
+{
+	ToOldException(String s)
+	{
+	super(s);   //to make description available to default exception handler
+	}
+}
+class CustExceptoin
+{
+public static vod main(String args[])
+{
+   int age=Integer.parseInt(args[0]);
+   if (age<18)
+   {
+    throw new TooYoungExceptoin("Your age is too less  for marrige");
+   }
+   elseif(if age>60)
+   {
+   throw new ToOldException("more age");
+   }
+   else
+   {
+   syso("good");
+   }
+}
+}
+
+note:
+-throw keyword is best for user defined or customised exception but not for predefined exceptions.
+-It is highllly recommended to define customised exceptoins as unchecked i.e we have to extends RunTimeEXception rather than Exception.
+-

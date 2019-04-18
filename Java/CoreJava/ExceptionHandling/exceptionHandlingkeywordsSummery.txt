@@ -1,0 +1,18 @@
+Exception Handling keywords summery
+-try-to maintain risky code
+-catch-to maintain exception handling code
+-finally-to maintain cleanup code
+-throw-to handover our created exception object to the JVM manually
+-thorws-to delegate responsibility of exception handling to the caller
+-
+
+Various possible compile time errors in exception handling
+-unreported exception xxx: must be cayght or declared to be thrown
+-exception xxx has already been caught
+-Exception xxx is never thrown in body pf corresponding try statement
+-Unreachable statement
+-incompatible types founds:Test required java.lang.Throwable
+-try without catch or finally
+-catch without try
+-finally without try
+

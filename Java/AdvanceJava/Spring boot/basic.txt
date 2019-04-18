@@ -1,0 +1,31 @@
+Spring boot
+-EJB...difficult to manage and because of entity becaomes heavy
+-POJO
+-spring features-pojo
+-dependency injection
+-MVC
+-REST
+-security
+-Batch
+-Data
+-AOP
+spring integrate with hibernate and struts
+work with jar files
+-configure lot of stuff
+
+spring boot gives u product with dependency and configuration
+-so we dont need to configure 
+-spring boot provide embeded server that is tomcat in jar files
+-we can run our project on cmd(JVM)
+-there is no xml files
+-we can add properties in application.properties
+
+dependency injection
+-loose coupling---no dependency between objects
+-if we create object using new keyword then there is tight coupling so there is services like dependency injection container which inject dependency or create object automatically.
+-in spring in xml we configure all these things
+-in springboot @component and @autowired annotation  generate that object on demands
+-it acheive loose coupling
+-dont need to test both class
+-why sts(spring tool suite)
+-

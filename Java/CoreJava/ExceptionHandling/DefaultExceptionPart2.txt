@@ -1,0 +1,59 @@
+Method in which exception occured is responsible to create exception object with/including following information-
+-name
+-description
+-location
+After that method will handover exception object to JVM
+-JVM checkis there any handling code inside method, if not then JVM terminate that method abnormally and JVM removed entry of that method from stack
+JVM identified who is caller of that method,then go to parent method and  asked to handle exception if handling code is not there then JVM kill that parent method also and removed entry from stack.
+this prodescc will continued until mian method
+-JVM will move to main , treminate main method abnormally and removed entry from stack.
+-JVM called to default exception handler
+-default exception handler display on console that exception occured(exception in thread mian:java.lang.arithmmetic divided by zero exception at Test.domorestuff at Test.dostuff at Test.main())
+(name of exception,description,location)
+
+Exception in thread "xxx" name of exception,description ,location
+If at least one method treminate abnormally,then program excute is abnormal, if all method excute normally then program termination is normal termination
+
+Exception hierarchy:
+-Throwable class  is root class of excption hierarchy
+-Throwable class contain two child classes-
+1.Exception
+2.Error
+
+-Exceptions are recoverable as exceptions area caused by our program
+-But errors are not aoccured by our program these are due to system resources so errors are non recoverable
+-Ex-OutOfMemory error occurs being a programmer we cant do anything,program will be terminated abnormally.
+-System our server admin is responsible tp increase heap memory
+
+-Exception
+-child classes are-
+-RuntimeException
+	-Arithmetic Exception
+	-nullpointerException
+	-ClassCashedException
+	-IndexOutOfBoundsExceptoin
+			-ArrayIndexOutOfBoundsExcepton
+			-StringIOOException
+	-IllegalArrayOutOfBoundsException
+			-numberFormatExceptoin
+-IOException
+		-EOFException
+		-FileNotFoundException
+		-InterruptedIoException
+		-
+-Servlet Exception
+-Remote Exception-
+-InterruptedException
+
+
+
+Error-
+Error hierarchy
+-VMError
+		-StackOverflowError
+		-OutOfMemoryError
+-ExceptionInInitializationError
+-AssertionError
+
+		
+		

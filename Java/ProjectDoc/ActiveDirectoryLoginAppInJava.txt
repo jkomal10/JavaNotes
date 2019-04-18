@@ -1,0 +1,11 @@
+youtube link=https://www.youtube.com/watch?v=0WyBxwJD_c0        to create active directory DNS and DHCP
+https://www.youtube.com/watch?v=yZ6Te5TDvhg---------to add users to active directory
+http://www.developerscrappad.com/963/java/jndi/java-jndi-ldap-windows-active-directory-authentication-organizational-unit-group-and-other-information-access/----------java code for login application with active directory
+=4a)*vWYTF----------------ec2 password------WindowsActiveKeyPair
+
+
+severname=WIN-40P3B0R6VI6
+root domain name=etcg.com
+directory service restore mode=Komal@123
+username=jkomal
+Password=Indiavictory@10

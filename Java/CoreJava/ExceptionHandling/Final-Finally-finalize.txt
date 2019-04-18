@@ -1,0 +1,57 @@
+Final,Finally,Finalize
+final:
+-modifier applicable for classes,methods,variables
+-we can't inherite final class,
+-we can't overrite final method
+-we can't reassign final variables
+
+Final:
+-it is a modifier applicable for classes,methods and variables.
+-If class declared as final then we can't extend that class i.e we cant create child class for that class i.e inheritance is not possible for final classes
+-If a method is final then we can't overrid that method in the child class.
+-If a variable declared as final then we can't perform reassignment for that variable.
+
+
+Finally:
+-Finally is a block always assossiated with try catch to maintain clean up code
+Syntax
+try{risky code}
+catch(exception e){handling code}
+finally{cleanUp code}
+
+-The speciality of finally block is it will be excuted always irrespective of whether exception is rised or not rised or whethe handle or not handle.
+
+Finalize()
+-it is a method always invoked by garbage collector just before destryoing an object to perform activities.
+-Once finalize completes immediately garbage collector destroys that object.
+-finally block is resposible toperform cleanup activities related to try block i.e whatever resources we opened at a part of try block will be closed inside finally block.
+-whereas finalize method is responsible to perform cleanup activities related to object i.e whatever resources assossiated with object will be deallocated before destryoing an object by using finalize method.
+
+- Various possible combinations of try catch finally
+-try-catch-catch
+-try-catch-finally
+-try-finally
+-try-catch-try-catch
+-try -catch-try-finally
+-try......invalid.compile time error----try without catch or finally
+-catch.....invalid ....catch without try
+-finally.....invalid.....finally without try
+-try-finally-catch----invalid catch without try
+-try-syso-syso-catch..invalid....try without catch and catch without try 2 compile time error
+-try-catch-syso-catch.......invalid...catch without try
+-try-catch-sys0-finally.....invalid,.....finally without try
+-try-try-catch-catch....valid 
+-try-try-catch....invalid try without catch or finally
+-try-try-finally-catch----valid
+-try-catch-finally.....invalid....finally without try
+-try-catch-finally-try-catch......
+-try-catch-finally-finally(inside finally).....inavlid ...finally without try
+-try-catch-finally-finally(outside finally).....invalid ....finally withou try
+-for try, catch and finally curly braces are important and order is also important.
+-whenever we are writing try compusory write catch finally important otherwise CE ie. try wihtout catch or finally is invalid
+-whenever we are writing catch block compulsory try must be required i.e catch without try is invalid
+-whenever we are writing finally block compulsory write try...i.e finally without try is invalid
+-inside try catch finally blocks we can declare try catcj finally blocks i.e nesting of try catch finally is valid
+-try catch finally blocks curly braces are mandatory
+-
+-

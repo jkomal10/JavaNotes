@@ -1,0 +1,76 @@
+Exception raised by
+-JVM
+-Programmer
+-API developer
+
+Top 10 exceptions
+-Based on th eperson who is rising an exception all exceptionsa are divided into two categories:
+-1.JVM exceptions
+-2.Programatic exceptions
+
+JVM exceptions
+-The exceptions which are rised automatically by JVM whenever a particular event occurs are called JVM exceptions
+Ex-Arithmetic Exceptions,NullPOinterException 
+
+Programatic Exceptons
+-The Exceptions which are rised explicitly either by programmer or API developer to indicate that something goes wrong are called programatic exceptions
+Ex-TooOldException,IllegalArgumentException,etc
+
+1.ArrayIndexOutOfBoundsException
+-it is the child class of RuntimeException and hence it is unchecked.
+-Rised automatically by JVM whenever we are  trying to access array element with out of range index 
+ex- int[] x=new int[4];
+syso(x[-10])//RE:ArrayIndexOutOfBoundsException
+
+2.NullPOinterException
+-it is the child class of RuntimExcption and hence it is unchecked exception.
+-rised automatically by JVM whenever we are trying to perform any operation on null
+-Ex- String s=null;
+syso(s.length());RE:NullPOinterException
+
+3.ClassCastException
+-it is child class of RuntimeException and hence it is unchecked Exception.
+-rised automatically by JVM whenever we are trying to type cast parent object to child.
+Ex-String s=new String("Durga");
+Object o=new (Object)s
+//run successfully
+Object o=Object();
+String s=(String)o;///RE:ClassCastException
+
+Object o=new String("Durga");
+String s=(String)o;
+//Run successfully
+
+4.StackOverFlowError
+-it is child class of error hence it is unchecked exception
+-it is rised automatically by JVM whenever we are trying to perform recursive method call
+-class Test
+{
+ psv m1(){m2()}
+ psv m2{m1()}
+ psv main(){m1()}
+}
+
+5.NoClassDefFoundError
+-it is an child class of error and hence it is unchecked.
+-rised automatically by JVM whwnevr we are JVM unable to find required .class file
+-Java test
+-if Test.class file is not available then we will get runtimeException saying NoClassDefFoundError:Test.
+
+6.ExceptionInInitializerError
+-it is an child class of error and hence it is unchecked.
+-rised automatically by JVM  if any exception occurs while excuting static varialble assignments and static bloks.
+whenever we are trying to intialise static varialble and block as null.
+-class Test{
+statci int x=10/0;
+}
+RE:ExceptionInInitializerError caused by java.lang.ArithemticException
+
+class test
+{
+static{
+String s=null;
+syso(s.length())
+}
+}
+RE:ExceptionInInitializerErrorcaused by java.lang.NullPOinterException
